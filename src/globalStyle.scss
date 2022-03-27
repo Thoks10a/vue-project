@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+$color-background:#e0e0e0;
+$color-background-nav:#2B3D50;
+$color-background-home:#344960;
+$color-text-light:#EDEDED;
+$color-text-title:#FF5555;
+$color-text-dark:#3D3D3D;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','Oswald', 'Spartan',sans-serif;
+}
+
+html,body {
+    background-color: $color-background;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s opacity;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+@mixin a-hover {
+    a {
+    text-decoration: none;
+    transition: 0.2s opacity;
+    }
+    a:hover {
+        opacity: 0.8;
+    }
+}
